@@ -14,5 +14,5 @@ function resize (){
     }
 };
 
-window.onresize = resize;
+resize();
 
