@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, .h1Font{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.font-family{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.minvh-100{
+    min-height: 100vh;
+}
+.ButtonP{
+    transition: 0.5s;
+
+    border: 0;
+    outline: none;
+}
+button.bgBlue:hover{
+    background-color: #1057ad;
+}
+button.bgLblue:hover{
+    background-color: #0196db;
+}
+.strokeButton{
+    transition: 0.5s;
+    border: 1px solid #136ad5;
+    outline: none;
+    background-color: transparent;
+}
+.strokeButton:hover{
+    background-color: #136ad5;
+    color: #fff;
+}
+.small-font{
+    font-size: 0.8rem;
+}
+.bg-light-blue{
+    background-color: #f3f7fd;
+}
+.bgLblue{
+    background-color: #00aeff;
+}
+.bgBlue{
+    background-color: #136ad5;
+}
+.bgGray{
+    background-color: #f8f9fa;
+}
+.textBlue{
+    color: #136ad5;
+}
+.textLblue{
+    color: #00aeff;
+}
+.textGray{
+    color: #666666;
+}
+.maxw{
+    max-width: 650px;
+}
+.h5-size{
+    font-size: 1.3rem;
+}
+
+
+p{
+    color: #666666;
+}
+
+
+
+section{
+    min-height: 80vh;
+}
+.hero{
+    background: url("./../img/hero.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.hero h1{
+    font-size: 3rem;
+}
+.overlay{
+    background-color: #136ad5;
+    opacity: 0.8;
+}
+#categories .icon{
+    font-size: 2rem;
+
+    width: 50px;
+    height: 50px;
+}
+footer .icon{
+    width: 40px;
+    height: 40px;
+}
+.icon{
+    font-size: 2rem;
+
+    width: 75px;
+    height: 75px;
+}
+.center-md{
+    justify-content: space-between;
+}
+.over-img{
+    transform: translateY(-15%);
+}
+.line{
+    height: 1px;
+}
+.back-img{
+    background: url('./../img/back-img.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.img-shadow{
+    box-shadow: 200px -30px 0 0 #136ad544;
+}
+#Tesimonials img{
+    width: 75px;
+}
+
+#corousal-indecator{
+    width: 10px;
+    height: 10px ;
+    border-radius: 50%  ;
+    background-color: #666666;
+}
+#corousal-indecator.active{
+    background-color: #136ad5;
+}
+
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E") !important;
+    margin-left: 0px !important;
+    position: absolute;
+    left: 13px;
+}
+.accordion-button:not(.collapsed)::after{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E") !important;
+}
+.accordion-button:not(.collapsed){
+    background-color: #1057ad !important;
+    color: #fff !important;
+}
+.accordion-button:focus{
+    box-shadow: none !important;
+}
+
+
+
+
+
+
+
+@media screen and (max-width : 992px) {
+    .over-img{
+        transform: translateY(0%);
+    }
+    .center-md{
+        justify-content: center;
+    }
+}
+@media screen and (max-width : 576px) {
+    .column-small{
+        flex-direction: column;
+    }
+    .column-small p , .column-small h2 {
+        text-align: center;
+    }
+    footer p, footer h2{
+        text-align: center;
+    }
+    .justify-xs{
+        justify-content: center;
+    }
+}
