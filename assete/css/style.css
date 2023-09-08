@@ -11,9 +11,6 @@ h1, .h1Font{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.minvh-100{
-    min-height: 100vh;
-}
 .ButtonP{
     transition: 0.5s;
 
@@ -33,7 +30,7 @@ button.bgLblue:hover{
     background-color: transparent;
 }
 .strokeButton:hover{
-    background-color: #136ad5;
+    background-color: #136ad5 !important;
     color: #fff;
 }
 .small-font{
@@ -66,6 +63,15 @@ button.bgLblue:hover{
 .h5-size{
     font-size: 1.3rem;
 }
+.transition-5{
+    transition: 0.5s;
+}
+.transition-1{
+    transition: 1s;
+}
+.dropdown-menu{
+    background-color: #00aeff !important;
+}
 
 
 p{
@@ -73,6 +79,11 @@ p{
 }
 section{
     min-height: 80vh;
+}
+video{
+    min-width: 100vw;
+    min-height: 100vh;
+    z-index: -1;
 }
 
 
@@ -134,22 +145,16 @@ section{
 
 
 .fixedMove{
-    top: 50px !important;
+    top: 50px;
 }
 .ToggleM{
     display: none !important;
-}
-.hero{
-    background: url("./../img/hero.jpg") no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 .hero h1{
     font-size: 3rem;
 }
 .overlay{
-    background-color: #136ad5;
-    opacity: 0.8;
+    background: #1057adcc;
 }
 .topdiv{
     height: 50px;
@@ -194,6 +199,11 @@ footer .icon{
 #Tesimonials img{
     width: 75px;
 }
+.imgmove:hover img{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 
 #corousal-indecator{
     width: 10px;
@@ -222,6 +232,23 @@ footer .icon{
 .accordion-button:focus{
     box-shadow: none !important;
 }
+.card-translate:hover{
+    transform: translateY(-15px);
+    background-color: #136ad5;
+    box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.5);
+    border: 0 !important;
+}
+.card-translate:hover h2,.card-translate:hover p, .card-translate:hover span {
+    color: #fff !important;
+}
+.card-translate:hover .icon , .card-translate:hover button{
+    transform: translateY(-15px);
+    box-shadow: 0 10px 20px 2px rgba(0, 0, 0, 0.3);
+}
+
+.nav-link.active{
+
+}
 
 
 
@@ -229,12 +256,16 @@ footer .icon{
 
 
 
-@media screen and (max-width : 992px) {
+@media screen and (max-width : 991px) {
     .over-img{
         transform: translateY(0%);
     }
     .center-md{
         justify-content: center;
+    }
+    #navbarSupportedContent{
+        background-color: #136ad5;
+        padding: 20px;
     }
 }
 @media screen and (max-width : 768px){
@@ -243,10 +274,6 @@ footer .icon{
     }
     .ToggleP{
         display: none;
-    }
-    #navbarSupportedContent{
-        background-color: #136ad5;
-        padding: 20px;
     }
 }
 @media screen and (max-width : 576px) {
