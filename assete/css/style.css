@@ -71,11 +71,73 @@ button.bgLblue:hover{
 p{
     color: #666666;
 }
-
-
-
 section{
     min-height: 80vh;
+}
+
+
+.navbar-toggler{
+    width: 20px;
+    height: 20px;
+    transition: 0.5s ease-in-out;
+    position: relative;
+}
+.navbar-toggler, .navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:active, .btn-none, .btn-none:focus, .btn-none:active{
+    outline: none !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+.toggler-icon{
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    border: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 0.5s;
+}
+.middle-bar {
+    margin-top: 0;
+}
+
+.navbar-toggler .top-bar{
+    margin-top: 0;
+    transform: rotate(135deg);
+}
+.navbar-toggler .middle-bar{
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.navbar-toggler .bottom-bar{
+    margin-top: 0;
+    transform: rotate(-135deg);    
+}
+
+.navbar-toggler.collapsed .top-bar{
+    margin-top: -10px;
+    transform: rotate(0deg);
+}
+.navbar-toggler.collapsed .middle-bar{
+    opacity: 1;
+    filter: alpha(opacity=1);
+}
+.navbar-toggler.collapsed .bottom-bar{
+    margin-top: 10px;
+    transform: rotate(0deg);
+}
+
+
+
+
+
+.fixedMove{
+    top: 50px !important;
+}
+.ToggleM{
+    display: none !important;
 }
 .hero{
     background: url("./../img/hero.jpg") no-repeat;
@@ -88,6 +150,13 @@ section{
 .overlay{
     background-color: #136ad5;
     opacity: 0.8;
+}
+.topdiv{
+    height: 50px;
+    border-bottom: 1px solid #ffffff55;
+}
+.height50{
+    height: 50px;
 }
 #categories .icon{
     font-size: 2rem;
@@ -166,6 +235,18 @@ footer .icon{
     }
     .center-md{
         justify-content: center;
+    }
+}
+@media screen and (max-width : 768px){
+    .ToggleM{
+        display: block !important;
+    }
+    .ToggleP{
+        display: none;
+    }
+    #navbarSupportedContent{
+        background-color: #136ad5;
+        padding: 20px;
     }
 }
 @media screen and (max-width : 576px) {

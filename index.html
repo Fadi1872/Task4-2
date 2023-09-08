@@ -15,6 +15,101 @@
 </head>
 <body>
     <head>
+        <div class="position-absolute top-0 end-0 start-0 w-100 topdiv z-1">
+            <div class="container">
+                <div class="row align-items-center height50">
+                    <div class="col-lg-6 col-md-9 d-flex col-5 justify-content-between align-items-center">
+                        <p class="text-white mb-0 ToggleP">
+                            <i class="fa-solid fa-question"></i>
+                            Have a question?
+                        </p>
+                        <p class="text-white mb-0 ToggleP">
+                            <i class="fa-solid fa-phone"></i>
+                            10 20 123 456
+                        </p>
+                        <p class="text-white mb-0 ToggleP">
+                            <i class="fa-solid fa-envelope"></i>
+                            info@mydomain.com
+                        </p>
+                        <a class="nav-link dropdown-toggle text-white ToggleM" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">
+                                <i class="fa-solid fa-question"></i>
+                                Have a question?
+                            </a></li>
+                            <li><a class="dropdown-item" href="#">
+                                <i class="fa-solid fa-phone"></i>
+                                10 20 123 456
+                            </a></li>
+                            <li><a class="dropdown-item" href="#">
+                                <i class="fa-solid fa-envelope"></i>
+                                info@mydomain.com
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-7 ms-auto d-flex align-items-center justify-content-between">
+                        <p class="text-white mb-0">
+                            <i class="fa-solid fa-lock"></i>
+                            Log In
+                        </p>
+                        <p class="text-white mb-0">
+                            <i class="fa-solid fa-user"></i>
+                            Register
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navchange fixed-top fixedMove vw-100">
+            <div class="container ">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand text-white" href="#">Navbar</a>
+                        <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justity-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="toggler-icon top-bar transition-5"></span>
+                            <span class="toggler-icon middle-bar transition-5"></span>
+                            <span class="toggler-icon bottom-bar transition-5"></span>
+                        </button>
+                        <div class="collapse navbar-collapse rounded-4" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link text-white active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#Category">Category</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#Instructor">Instructor</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#Education">Education</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#Course">Courses</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        About Us
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#About">About Us</a></li>
+                                        <li><a class="dropdown-item" href="#News">News</a></li>
+                                        <li><a class="dropdown-item" href="#Pricing">Pricing</a></li>
+                                        <li><a class="dropdown-item" href="#Tesimonials">Tesimonials</a></li>
+                                        <li><a class="dropdown-item" href="#Choose">Choose Us</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="#contact">contact</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <button type="button" class="ButtonP bgLblue rounded-5 py-2 px-3 text-white font-family small-font">ENROLL NOW</button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
         <div class="hero w-100 vh-100 minvh-100 d-flex justify-content-center align-items-center position-relative">
             <div class="overlay position-absolute top-0 start-0 w-100 h-100 z-0"></div>
             <div class="container z-1 w-100 d-flex flex-column justify-content-center align-items-center">
@@ -25,7 +120,7 @@
         </div>
     </head>
     <main>
-        <section id="categories" class="d-flex flex-column justify-content-center align-items-center">
+        <section id="Category" class="d-flex flex-column justify-content-center align-items-center">
             <div class="container py-5">
                 <h1 class="mb-5 text-center textBlue">Brows Top Category</h1>
                 <div class="row mb-2">
@@ -123,11 +218,11 @@
             </div>
         </section>
 
-        <section class="bgGray d-flex flex-column justify-content-center align-items-center">
+        <section id="Instructor" class="bgGray d-flex flex-column justify-content-center align-items-center">
             <div class="container py-5">
                 <div class="row center-md">
                     <div class="col-lg-5 col-12">
-                        <h1 class="mb-4 textBlue">Brows Top Category</h1>
+                        <h1 class="mb-4 textBlue">Become an Instructor</h1>
                         <p>
                             Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
                             there live the blind texts. Separated they live.
@@ -153,7 +248,7 @@
             </div>
         </section>
 
-        <section class="d-flex flex-column justify-content-center align-items-center">
+        <section id="Education" class="d-flex flex-column justify-content-center align-items-center">
             <div class="container py-5">
                 <h1 class="text-center textBlue mb-4">We Have the Best Education</h1>
                 <p class="maxw text-center mx-auto mb-5">
@@ -237,7 +332,7 @@
             </div>
         </section>
 
-        <section class="bgGray d-flex flex-column justify-content-center align-items-center">
+        <section id="Course" class="bgGray d-flex flex-column justify-content-center align-items-center">
             <div class="container py-5">
                 <h1 class="text-center textBlue mb-4">The Right Course For You</h1>
                 <p class="maxw text-center mx-auto mb-5">
@@ -353,7 +448,7 @@
             </div>
         </section>
 
-        <section class="d-flex flex-column justify-content-center align-items-center">
+        <section id="About" class="d-flex flex-column justify-content-center align-items-center">
             <div class="container py-5">
                 <div class="row center-md">
                     <div class="col-lg-5 col-12">
@@ -413,7 +508,7 @@
             </div>
         </section>
 
-        <section class="bgGray d-flex flex-column justify-content-center align-items-center">
+        <section id="News" class="bgGray d-flex flex-column justify-content-center align-items-center">
             <div class="container py-5">
                 <h1 class="text-center textBlue mb-4">School News</h1>
                 <p class="maxw text-center mx-auto mb-5">
@@ -469,7 +564,7 @@
             </div>
         </section>
 
-        <section class="d-flex flex-column justify-content-center align-items-center">
+        <section id="Pricing" class="d-flex flex-column justify-content-center align-items-center">
             <div class="container py-5">
                 <h1 class="text-center textBlue mb-4">Pricing</h1>
                 <p class="maxw text-center mx-auto mb-5">
@@ -573,7 +668,7 @@
             </div>
         </section>
 
-        <section class="d-flex flex-column justify-content-center align-items-center">
+        <section id="Choose" class="d-flex flex-column justify-content-center align-items-center">
             <div class="container py-5">
                 <div class="row">
                     <div class="col-lg-5">
@@ -671,7 +766,7 @@
         </section>
     </main>
 
-    <footer class="bgBlue">
+    <footer id="contact" class="bgBlue">
         <div class="container py-5">
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-6 col-10 text-white mx-auto mb-5">
