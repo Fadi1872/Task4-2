@@ -150,6 +150,18 @@ video{
 .ToggleM{
     display: none !important;
 }
+.dropdown-item:hover{
+    background-color: #136ad5 !important;
+}
+.nav-link {
+    opacity: 0.7;
+}
+.nav-link:hover {
+    opacity: 0.9;
+}
+.nav-link.active {
+    opacity: 1;
+}
 .hero h1{
     font-size: 3rem;
 }
@@ -168,6 +180,9 @@ video{
 
     width: 50px;
     height: 50px;
+}
+#Category .object-fit-contain{
+    cursor: pointer;
 }
 footer .icon{
     width: 40px;
@@ -241,7 +256,7 @@ footer .icon{
 .card-translate:hover h2,.card-translate:hover p, .card-translate:hover span {
     color: #fff !important;
 }
-.card-translate:hover .icon , .card-translate:hover button{
+.card-translate:hover .icon , .card-translate:hover button, #Category .object-fit-contain:hover .icon{
     transform: translateY(-15px);
     box-shadow: 0 10px 20px 2px rgba(0, 0, 0, 0.3);
 }

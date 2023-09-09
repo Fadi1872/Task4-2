@@ -43,3 +43,22 @@ window.addEventListener('scroll',()=>{
 
 
 
+let sections = document.querySelectorAll('div#home, section');
+let navL = document.querySelectorAll('a.nav-link');
+window.onscroll = () => {
+    sections.forEach(item => {
+        let i = window.scrollY;
+        let offset = item.offsetTop;
+        let height = item.offsetHeight;
+        let id = item.getAttribute('id');
+
+        if(i >= offset && i < offset + height){
+            navL.forEach(linkes => {
+                linkes.classList.remove('active');
+                document.querySelector('a.nav-link[href*='+ id +']').classList.add('active');
+            });
+        };
+    });
+};
+
+
