@@ -4,13 +4,15 @@
     box-sizing: border-box;
 }
 
-h1, .h1Font{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+/* the button font family used */
 .font-family{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/* these are general used classes */
+h1, .h1Font{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 .ButtonP{
     transition: 0.5s;
 
@@ -69,24 +71,19 @@ button.bgLblue:hover{
 .transition-1{
     transition: 1s;
 }
-.dropdown-menu{
-    background-color: #00aeff !important;
-}
+/* end of general used classes */
 
-
+/* styles implemented on all tags that i named down */
 p{
     color: #666666;
 }
 section{
     min-height: 80vh;
 }
-#home video, #Aboutus video{
-    min-width: 100vw;
-    min-height: 100vh;
-    z-index: -1;
-}
+/* end of tag names */
 
 
+/* here is the styles to the toggle icon navbar */
 .navbar-toggler{
     width: 20px;
     height: 20px;
@@ -113,7 +110,6 @@ section{
 .middle-bar {
     margin-top: 0;
 }
-
 .navbar-toggler .top-bar{
     margin-top: 0;
     transform: rotate(135deg);
@@ -139,16 +135,29 @@ section{
     margin-top: 10px;
     transform: rotate(0deg);
 }
+/* end of the styles to the toggle icon navbar */
 
 
 
-
-
+/* the head styles */
+/* the top div styles */
+.topdiv{
+    height: 50px;
+    border-bottom: 1px solid #ffffff55;
+}
+.height50{
+    height: 50px;
+}
+/* the end of top div styles */
+/* the navbar styles */
 .fixedMove{
     top: 50px;
 }
 .ToggleM{
     display: none !important;
+}
+.dropdown-menu{
+    background-color: #00aeff !important;
 }
 .dropdown-item:hover{
     background-color: #136ad5 !important;
@@ -159,22 +168,28 @@ section{
 .navbar .nav-link:hover {
     opacity: 0.9;
 }
-.navbar.nav-link.active {
+.navbar .nav-link.active {
     opacity: 1;
 }
+/* the end of navbar styles */
+/* styling the hero */
 .hero h1{
     font-size: 3rem;
+}
+/* these two classes used once more down */
+#home video, #Aboutus video{
+    min-width: 100vw;
+    min-height: 100vh;
+    z-index: -1;
 }
 .overlay{
     background: #1057adcc;
 }
-.topdiv{
-    height: 50px;
-    border-bottom: 1px solid #ffffff55;
-}
-.height50{
-    height: 50px;
-}
+/* end of styling the hero */
+/* end of the head styles */
+
+/* the main styles */
+/* categories styling */
 #categories .icon{
     font-size: 2rem;
 
@@ -184,42 +199,35 @@ section{
 #Category .object-fit-contain{
     cursor: pointer;
 }
-footer .icon{
-    width: 40px;
-    height: 40px;
-}
 .icon{
     font-size: 2rem;
 
     width: 75px;
     height: 75px;
 }
+/* end of categories styling */
+/* Instructor styling */
 .center-md{
     justify-content: space-between;
 }
 .over-img{
     transform: translateY(-15%);
 }
+/* end of Instructor styling */
+/* best courses styling */
 .line{
     height: 1px;
 }
-.back-img{
-    background: url('./../img/back-img.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.img-shadow{
+/* end of best courses styling */
+/* about us styling */
+.vid-shadow{
     box-shadow: 200px -30px 0 0 #136ad544;
 }
+/* end of about us styling */
+/* Tesimonials styling */
 #Tesimonials img{
     width: 75px;
 }
-.imgmove:hover img{
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-
 #corousal-indecator{
     width: 10px;
     height: 10px ;
@@ -229,8 +237,9 @@ footer .icon{
 #corousal-indecator.active{
     background-color: #136ad5;
 }
-
-
+/* end of Tesimonials styling */
+/* the choose us styling */
+/* here i am changing the accordion icon by changing the after */
 .accordion-button::after {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E") !important;
     margin-left: 0px !important;
@@ -247,6 +256,22 @@ footer .icon{
 .accordion-button:focus{
     box-shadow: none !important;
 }
+/* end of the choose us styling */
+/* the end of main styles */
+
+/* the footer stylings */
+footer .icon{
+    width: 40px;
+    height: 40px;
+}
+/* the end of footer stylings */
+
+
+/* cards hover effect */
+.imgmove:hover img{
+    transform: scale(1.1);
+    cursor: pointer;
+}
 .card-translate:hover{
     transform: translateY(-15px);
     background-color: #136ad5;
@@ -260,14 +285,11 @@ footer .icon{
     transform: translateY(-15px);
     box-shadow: 0 10px 20px 2px rgba(0, 0, 0, 0.3);
 }
+/* end of cards hover effect */
 
 
-
-
-
-
-
-
+/* the medis queries */
+/* md breakpoint */
 @media screen and (max-width : 991px) {
     .over-img{
         transform: translateY(0%);
@@ -280,6 +302,7 @@ footer .icon{
         padding: 20px;
     }
 }
+/* sm breakpoint */
 @media screen and (max-width : 768px){
     .ToggleM{
         display: block !important;
@@ -288,6 +311,7 @@ footer .icon{
         display: none;
     }
 }
+/* xs breakpoint */
 @media screen and (max-width : 576px) {
     .column-small{
         flex-direction: column;

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- external css file -->
     <link rel="stylesheet" href="./assete/css/style.css">
     <!-- bootstrap css  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -14,10 +15,13 @@
     <title>Learning</title>
 </head>
 <body>
+    <!-- here is the head where is the top div, navbar, and the hero section -->
     <head>
+        <!-- this is the top div -->
         <div class="position-absolute z-5 top-0 end-0 start-0 w-100 topdiv z-3">
             <div class="container">
                 <div class="row align-items-center height50">
+                    <!-- here is the more info part -->
                     <div class="col-lg-6 col-md-9 d-flex col-5 justify-content-between align-items-center">
                         <a href="#" class="text-white text-decoration-none mb-0 ToggleP">
                             <i class="fa-solid fa-question"></i>
@@ -34,6 +38,7 @@
                         <a class="nav-link dropdown-toggle text-white ToggleM" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             More Info
                         </a>
+                        <!-- this dropdown menu will appear on small sections -->
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item text-white" href="#">
                                 <i class="fa-solid fa-question"></i>
@@ -49,6 +54,7 @@
                             </a></li>
                         </ul>
                     </div>
+                    <!-- here is the log in and Register -->
                     <div class="col-lg-3 col-md-3 col-7 ms-auto d-flex align-items-center justify-content-between">
                         <a href="#" class="text-white mb-0 text-decoration-none mb-0">
                             <i class="fa-solid fa-lock"></i>
@@ -62,6 +68,7 @@
                 </div>
             </div>
         </div>
+        <!-- this is the navbar -->
         <div class="navchange position-absolute fixedMove z-2 vw-100">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
@@ -108,10 +115,13 @@
                 </div>
             </nav>
         </div>
+        <!-- this is the hero -->
         <div id="home" class="overlay overflow-hidden w-100 vh-100 minvh-100 d-flex justify-content-center align-items-center position-relative">
+            <!-- the background video -->
             <video autoplay muted loop class=" position-absolute top-50 start-50 translate-middle">
                 <source src="./assete/img/hero.mp4" type="video/mp4">
             </video>
+            <!-- the main content in the hero section -->
             <div class="container z-1 w-100 d-flex flex-column justify-content-center align-items-center">
                 <p class="text-white mb-4 font-family small-font">WHATCH THE VIDEO</p>
                 <h1 class="text-center text-white mb-4 maxw">Education is the Mother of Leadership</h1>
@@ -119,16 +129,24 @@
             </div>
         </div>
     </head>
+
+    <!-- all the main section are here -->
     <main>
+        <!-- the category section -->
         <section id="Category" class="d-flex flex-column justify-content-center align-items-center">
             <div class="container py-5">
+                <!-- here is the title -->
                 <h1 class="mb-5 text-center textBlue">Brows Top Category</h1>
+                <!-- the row div where is the whole categories -->
                 <div class="row mb-2">
+                    <!-- all columns have the same structure -->
                     <div class="col-lg-3 col-6">
                         <div class="object-fit-contain bg-light-blue d-flex align-items-center p-3 rounded-2 my-2 column-small">
+                            <!-- this is the category icon -->
                             <div class="icon transition-5 p-2 m-2 bg-white d-flex justify-content-center align-items-center rounded-3 me-3 position-relative">
                                 <i class="fa-solid fa-atom textLblue"></i>
                             </div>
+                            <!-- this is teh category discription -->
                             <div>
                                 <h2 class="h5 textGray mb-0">Sience</h2>
                                 <p class="small-font textGray mb-0 opacity-75">1,391 courses</p>
@@ -218,9 +236,11 @@
             </div>
         </section>
 
+        <!-- the become an Instructor section -->
         <section id="Instructor" class="bgGray d-flex flex-column justify-content-center align-items-center">
             <div class="container py-5">
                 <div class="row center-md">
+                    <!-- here we have tow parts the first one is the content and the second one is the photo -->
                     <div class="col-lg-5 col-12">
                         <h1 class="mb-4 textBlue">Become an Instructor</h1>
                         <p>
@@ -248,15 +268,20 @@
             </div>
         </section>
 
+        <!-- we have the best education section -->
         <section id="Education" class="d-flex flex-column justify-content-center align-items-center">
             <div class="container py-5">
+                <!-- here is the title -->
                 <h1 class="text-center textBlue mb-4">We Have the Best Education</h1>
                 <p class="maxw text-center mx-auto mb-5">
                     Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
                     there live the blind texts. Separated they live.
                 </p>
+                <!-- and here is the cards -->
                 <div class="row py-4">
                     <div class="col-lg-4 col-md-6 col-md-6">
+                        <!-- each card has icon and the content -->
+                        <!-- and there is a hover effect on the cards where the icon gets levetated and the card turns blue -->
                         <div class="object-fit-contain card-translate transition-5 border p-4 mb-3 position-relative" >
                             <div class="icon transition-1 bg-white position-relative rounded-pill border d-flex justify-content-center align-items-center mx-auto mb-4">
                                 <i class="fa-solid fa-music textBlue"></i>
@@ -332,6 +357,7 @@
             </div>
         </section>
 
+        <!-- the right course for you section -->
         <section id="Course" class="bgGray d-flex flex-column justify-content-center align-items-center">
             <div class="container py-5">
                 <h1 class="text-center textBlue mb-4">The Right Course For You</h1>
@@ -339,9 +365,12 @@
                     Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
                     there live the blind texts. Separated they live.
                 </p>
+                <!-- here is the three cards -->
                 <div class="row justify-content-center g-4">
+                    <!-- each card hase a photo and description -->
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="card h-100 border-0 shadow">
+                            <!-- the cards are taken from bootstrap components and i added the needed detailes -->
                             <div class="card-img-top imgmove overflow-hidden">
                                 <img src="./assete/img/Programm1.jpg" class="w-100 position-relative transition-5" alt="...">
                             </div>
@@ -436,10 +465,13 @@
             </div>
         </section>
 
+        <!-- the second hero section -->
         <section id="Aboutus" class="vh-100 overlay overflow-hidden position-relative">
+            <!-- the background video -->
             <video autoplay muted loop class=" position-absolute top-50 start-50 translate-middle">
                 <source src="./assete/img/section.mp4"type="video/mp4">
-            </video>
+            </video> 
+            <!-- and here is the main contect -->
             <div class="container z-1 w-100 h-100 d-flex flex-column justify-content-center align-items-center position-relative">
                 <h1 class="text-center text-white mb-4 fs-2">Education for Tomorrow's Leaders</h1>
                 <p class="text-white mb-4 maxw text-center">
@@ -450,8 +482,10 @@
             </div>
         </section>
 
+        <!-- the about us section -->
         <section id="About" class="d-flex flex-column justify-content-center align-items-center">
             <div class="container py-5">
+                <!-- same structure of the Instructor section but with a video -->
                 <div class="row center-md">
                     <div class="col-lg-5 col-12">
                         <h1 class="mb-4 textBlue">Who We Are</h1>
@@ -504,7 +538,7 @@
                         </div>
                     </div>
                     <div class="col-lg-5 col-10">
-                        <video controls class="w-100 img-shadow">
+                        <video controls class="w-100 vid-shadow">
                             <source src="./assete/img/aboutus.mp4" type="video/mp4" >
                         </video>
                     </div>
@@ -512,8 +546,10 @@
             </div>
         </section>
 
+        <!-- the news section -->
         <section id="News" class="bgGray d-flex flex-column justify-content-center align-items-center">
             <div class="container py-5">
+                <!-- two card components from bootstrap components -->
                 <h1 class="text-center textBlue mb-4">School News</h1>
                 <p class="maxw text-center mx-auto mb-5">
                     Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
@@ -568,7 +604,9 @@
             </div>
         </section>
 
+        <!-- the pricing section -->
         <section id="Pricing" class="d-flex flex-column justify-content-center align-items-center">
+            <!-- same structure as the best education section with the same hover effect but here the button is levetaded -->
             <div class="container py-5">
                 <h1 class="text-center textBlue mb-4">Pricing</h1>
                 <p class="maxw text-center mx-auto mb-5">
@@ -619,7 +657,10 @@
             </div>
         </section>
 
+        <!-- Tesimonials section -->
         <section id="Tesimonials" class="bgGray d-flex justify-content-center align-items-center" >
+            <!-- here is the carousal component from bootstrap -->
+            <!-- i turned the images with what some of the employees say -->
             <div class="container py-5 d-flex justify-content-center align-items-center flex-column">
                 <h1 class="text-center textBlue">Tesimonials</h1>
                 <div id="carouselExampleIndicators" class="carousel slide d-flex justify-content-center align-items-center">
@@ -672,8 +713,10 @@
             </div>
         </section>
 
+        <!-- why to choose us section -->
         <section id="Choose" class="d-flex flex-column justify-content-center align-items-center">
             <div class="container py-5">
+                <!-- last thing is the accordion component from bootstrap but i made some changes -->
                 <div class="row">
                     <div class="col-lg-5">
                         <img src="./assete/img/WU.jpg" alt="" class="w-100 mb-4">
@@ -770,8 +813,10 @@
         </section>
     </main>
 
+    <!-- this is the footer -->
     <footer id="contact" class="bgBlue">
         <div class="container py-5">
+            <!-- four sections, they have all contact info -->
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-6 col-10 text-white mx-auto mb-5">
                     <h2 class="h1Font fs-4 mb-4">About Us</h2>
@@ -860,10 +905,8 @@
 
 
 
-
+    <!-- external js file -->
     <script src="./assete/js/app.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
     <!-- bootstrap js  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- font awsome js  -->

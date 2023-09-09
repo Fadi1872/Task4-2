@@ -1,3 +1,4 @@
+// this function is used to chang the horizontal cards so it is no more long
 function resize (){
     var VPwidath = screen.width;
     if(VPwidath < 768){
@@ -18,6 +19,11 @@ window.addEventListener('load' , resize);
 window.addEventListener('resize', resize);
 
 
+
+// this code is responsible for making the navbar fixed when i scroll 50px and it changes the background color to blue
+// you can see i commented some pieces of the code, it was working correctly but the dropdown menu on top div it will always
+// be under the navbar so i had to make the navbar at first absolute so i can give it a z index so the drop menu no longer
+// gets under the navbar
 var navEl = document.querySelector('.fixedMove');
 var colorC = document.querySelector('.navchange');
 window.addEventListener('scroll',()=>{
@@ -25,24 +31,21 @@ window.addEventListener('scroll',()=>{
     if (i < 50){
         navEl.classList.remove('fixed-top');
         navEl.classList.add('position-absolute');
+        colorC.classList.remove('bgBlue');
         /*  let x = 50 - i ;
         navEl.style ='top : '+ x + 'px !important'; */
     }
-    if( i >= 50){
+    else{
         navEl.classList.add('fixed-top');
         navEl.classList.remove('position-absolute');
+        colorC.classList.add('bgBlue');
         /* navEl.style ='top : '+ 0 + 'px !important;'; */
-    }
-    if(i >= 50){
-        colorC.classList.add('bgBlue')
-    }
-    else if(i < 50){
-        colorC.classList.remove('bgBlue')
     }
 });
 
 
-
+// this code is responsible for making the navlinks interactive
+// so the code adds the active class on the navlink that is related (by id) to the section we are browsing  
 let sections = document.querySelectorAll('div#home, section');
 let navL = document.querySelectorAll('a.nav-link');
 window.onscroll = () => {
