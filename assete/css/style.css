@@ -80,7 +80,7 @@ p{
 section{
     min-height: 80vh;
 }
-video{
+#home video, #Aboutus video{
     min-width: 100vw;
     min-height: 100vh;
     z-index: -1;
@@ -153,13 +153,13 @@ video{
 .dropdown-item:hover{
     background-color: #136ad5 !important;
 }
-.nav-link {
+.navbar .nav-link {
     opacity: 0.7;
 }
-.nav-link:hover {
+.navbar .nav-link:hover {
     opacity: 0.9;
 }
-.nav-link.active {
+.navbar.nav-link.active {
     opacity: 1;
 }
 .hero h1{
@@ -261,9 +261,6 @@ footer .icon{
     box-shadow: 0 10px 20px 2px rgba(0, 0, 0, 0.3);
 }
 
-.nav-link.active{
-
-}
 
 
 
